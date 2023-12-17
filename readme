@@ -1,7 +1,3 @@
-Certainly! Here's a concise README template for a project built using Express:
-
----
-
 # IdeaXApi
 
 An Api to get project ideas for your next project, Get ideas inspired by famous figures and their contributions to science, technology, engineering, and mathematics (STEM) by providing mentor name in endpoint.
