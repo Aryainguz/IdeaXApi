@@ -49,12 +49,4 @@ Customize mentor in endpoint (`/api/idea/mentor?name="mentor name"`) for the pro
 }
 }
 ```
-
-## Notes
-
-- Ensure compliance with OpenAI's usage policies.
-- Customize the project idea generation logic and response structure as needed.
-
----
-
-This concise README provides essential information for developers to set up, configure, and use the project. Feel free to adjust it further based on specific project details and requirements.
+## Happy Hacking - Aryan Inguz :)
