@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
-  title: Random Project Generator API
-  description: API for generating random project ideas
+  title: IdeaXAPI 
+  description: An Api to generate cool ideas for your next project or maybe startup
   version: 1.0.0
 
 paths:
