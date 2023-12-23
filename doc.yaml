@@ -3,7 +3,8 @@ info:
   title: IdeaXAPI 
   description: An Api to generate cool ideas for your next project or maybe startup
   version: 1.0.0
-
+servers:
+  - url: https://idea-x-api.vercel.app
 paths:
   /api/idea:
     get:
