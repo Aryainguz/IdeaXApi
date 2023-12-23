@@ -1,0 +1,43 @@
+openapi: 3.0.0
+info:
+  title: Random Project Generator API
+  description: API for generating random project ideas
+  version: 1.0.0
+
+paths:
+  /api/idea:
+    get:
+      summary: Get a random project idea
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              example: { "idea": "Create a mobile app for language learning." }
+
+  /api/idea/mentor:
+    get:
+      summary: Get a random project idea based on a mentor's name
+      parameters:
+        - in: query
+          name: name
+          schema:
+            type: string
+          required: true
+          description: The name of your mentor
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              example: { "idea": "Build a website to showcase your mentor's expertise." }
+
+  /:
+    get:
+      summary: Home endpoint
+      responses:
+        '200':
+          description: Successful response
+          content:
+            text/html:
+              example: "Welcome to the Random Project Generator API!"
