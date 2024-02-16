@@ -18,7 +18,7 @@ paths:
 
   /api/idea/mentor:
     get:
-      summary: Get a random project idea based on a mentor's name
+      summary: Get a project idea based on a mentor's name
       parameters:
         - in: query
           name: name
@@ -33,22 +33,35 @@ paths:
             application/json:
               example: { "idea": "Build a website to showcase your mentor's expertise." }
   
-  /api/idea/talkmentor:
+   /api/idea/talkmentor:
     get:
-      summary: Get a random project idea based on a talk with a mentor
+      summary: Generate Idea
+      description: |
+        Generates an idea based on the provided mentor name and user text.
       parameters:
-        - in: query
-          name: mentor
-          usertext : the user chat
+        - name: name
+          in: query
+          description: The name of the mentor.
+          required: true
           schema:
             type: string
+        - name: usertext
+          in: query
+          description: The user's text to generate the idea.
           required: true
-          description: The name of your mentor
           schema:
             type: string
-          required: true
-          description: The name of the mentor and the user chat
-
+      responses:
+        '200':
+          description: A successful response with the generated idea.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  idea:
+                    type: string
+                    description: The generated idea.
   /:
     get:
       summary: Home endpoint
