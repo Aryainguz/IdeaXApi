@@ -33,7 +33,7 @@ paths:
             application/json:
               example: { "idea": "Build a website to showcase your mentor's expertise." }
   
-   /api/idea/talkmentor:
+  /api/idea/talkmentor:
     get:
       summary: Generate Idea
       description: |
