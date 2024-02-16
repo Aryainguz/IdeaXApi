@@ -32,6 +32,22 @@ paths:
           content:
             application/json:
               example: { "idea": "Build a website to showcase your mentor's expertise." }
+  
+  /api/idea/talkmentor:
+    get:
+      summary: Get a random project idea based on a talk with a mentor
+      parameters:
+        - in: query
+          name: mentor
+          usertext : the user chat
+          schema:
+            type: string
+          required: true
+          description: The name of your mentor
+          schema:
+            type: string
+          required: true
+          description: The name of the mentor and the user chat
 
   /:
     get:
